@@ -1,0 +1,51 @@
+.tt-grid {
+  display: grid;
+  grid-template-columns: 90px repeat(5, 1fr);
+  gap: 6px;
+}
+.tt-grid .tt-head {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #8B8E96;
+  padding: 8px 4px;
+  text-align: center;
+}
+.tt-grid .tt-time {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: #8B8E96;
+  display: flex;
+  align-items: center;
+  padding-right: 6px;
+  text-align: right;
+  justify-content: flex-end;
+}
+.tt-cell {
+  min-height: 64px;
+  border-radius: 8px;
+  padding: 8px 9px;
+  background: var(--paper-dim);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+}
+.tt-cell.empty { background: transparent; border: 1px dashed var(--line); }
+.tt-cell .tt-subject { font-size: 0.78rem; font-weight: 600; color: #fff; }
+.tt-cell .tt-meta { font-size: 0.68rem; color: rgba(255,255,255,0.85); }
+.tt-break {
+  min-height: 24px;
+  border-radius: 6px;
+  background: repeating-linear-gradient(45deg, var(--paper-dim), var(--paper-dim) 4px, transparent 4px, transparent 8px);
+}
+.tt-legend {
+  display: flex;
+  gap: 16px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+  font-size: 0.78rem;
+  color: #6B6F79;
+}
+.tt-legend .swatch { display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 6px; }
