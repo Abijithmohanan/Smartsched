@@ -1,8 +1,7 @@
-# SmartSched — Frontend Prototype
+# SmartSched — Frontend 
 
 An **AI College Timetable Management System** frontend, built with **React + Vite + React Router**.
-This is a **UI prototype only** — all data is dummy/in-memory (see `src/data/dummyData.js`), there is
-no backend, and "login" simply lets you pick a role to explore its dashboard.
+
 
 ## What's included
 
